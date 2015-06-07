@@ -1,116 +1,40 @@
-<template data-controller-name="tld__domain.product__app.controllers.Detail">
-	
-	<div data-sap-ui-type="ui5strap.Page">
-		<div data-sap-ui-aggregation="head">
-		</div>
-		<div data-sap-ui-type="ui5strap.Heading" data-level="2" data-text="{i18n>RESULT_HEADING}"></div>
-		<div data-sap-ui-type="ui5strap.Heading" data-align="center" data-level="4" data-text="{ path : 'meetdesk>/appdata/searchstring' }"></div>
-			
-			<div data-sap-ui-aggregation="body">
-						
-					
-						
-			<!-- Container Form -->
-			<div data-sap-ui-type="ui5strap.ScrollContainer" data-vertical="true">
-				<div class="spaceinfo" data-sap-ui-type="ui5strap.Container" data-type="Fluid"  > 
-					<div data-sap-ui-type="ui5strap.Row">
-						
-						
-						
-						
-						
-									
-						
-									<div data-sap-ui-type="ui5strap.Col" data-columns-small="8">
-							 
+<template
+	data-controller-name="tld__domain.product__app.controllers.Detail">
+
+<div data-sap-ui-type="ui5strap.Page">
+	<div data-sap-ui-aggregation="head"></div>
+	<div data-sap-ui-type="ui5strap.Heading" data-level="2"
+		data-text="{i18n&gt;RESULT_HEADING}"></div>
+	<div data-sap-ui-type="ui5strap.Heading" data-align="center"
+		data-level="4" data-text="{ path : 'spaces&gt;/name' }"></div>
+
+	<div data-sap-ui-aggregation="body">
+
+
+
+		<!-- Container Form -->
+		<div data-sap-ui-type="ui5strap.ScrollContainer" data-vertical="true">
+			<div class="spaceinfo" data-sap-ui-type="ui5strap.Container"
+				data-type="Fluid">
+				<div data-sap-ui-type="ui5strap.Row">
+
+					<div data-sap-ui-type="ui5strap.Col" data-columns-small="8">
+
+						<div data-sap-ui-type="ui5strap.Carousel" class="example-carousel" data-content="{meetdesk&gt;/appdata/spacedata}">
+          <div data-sap-ui-aggregation="content" data-sap-ui-type="ui5strap.Container"  data-type="FluidInset">
+							<!-- Page 1 -->
+				
+
+								<div data-sap-ui-type="ui5strap.Heading" data-align="center"
+									data-level="4" data-text="{ path : 'spaces&gt;/name' }"></div>
 							
-										<div data-id="cont" data-sap-ui-type="ui5strap.Container" data-content="{meetdesk>/appdata/org/1/spacedata}">
-								
-											
-											<div class="spacedata" data-sap-ui-type="ui5strap.Row">
-						
-											
-											<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
-												<div   data-sap-ui-type="ui5strap.Container">
-		
-													<div data-sap-ui-type="ui5strap.Heading" data-level="1" data-text="{meetdesk>name}"></div>
-													<div data-sap-ui-type="ui5strap.Paragraph">
-											
-														
-											
-														<div data-sap-ui-type="ui5strap.Text" data-text="{meetdesk>description}" data-trailing-space="true"></div>
-														<div data-sap-ui-type="ui5strap.Text" data-text="{i18n>PAGE3_CAPACITY}" data-trailing-space="true"></div>
-														<div data-sap-ui-type="ui5strap.Link" data-href="#" data-text="{meetdesk>description}"></div>
-													
-													</div>
-									
-													<div data-sap-ui-type="ui5strap.Paragraph">
-														<div data-sap-ui-type="ui5strap.Text" data-text="{meetdesk>description}" data-trailing-space="true"></div>
-													</div>
-												</div>
-											</div>
-										
-											<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
-												
-												<div data-sap-ui-type="ui5strap.Row">
-						
-													<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
-												
-														<div class="spacedata" data-sap-ui-type="ui5strap.Container">
-															<div data-sap-ui-type="ui5strap.Image" data-src="./app/img/room1.jpg" data-alt="Image" data-width="100%" data-height="100%"></div>
-											
-														</div>
-										
-													</div>
-													
-													
-													<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
-												
-														<div data-sap-ui-type="ui5strap.Container">
-															<div data-sap-ui-type="ui5strap.Image" data-src="./app/img/room2.jpg" data-alt="Image" data-width="84" data-height="84"></div>
-											
-														</div>
-										
-													</div>
-												</div>
-										
-											<div data-sap-ui-type="ui5strap.Row">
-						
-													<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
-												
-														<div class="spacedata" data-sap-ui-type="ui5strap.Container">
-															<div data-sap-ui-type="ui5strap.Image" data-src="./app/img/room3.jpg" data-alt="Image" data-width="100%" data-height="100%"></div>
-											
-														</div>
-										
-													</div>
-													
-													
-													<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
-												
-														<div class="spacedata" data-sap-ui-type="ui5strap.Container">
-															<div data-sap-ui-type="ui5strap.Image" data-src="./app/img/room4.jpg" data-alt="Image" data-width="84" data-height="84"></div>
-											
-														</div>
-										
-													</div>
-												</div>
-	
-										
-											</div>
-										
-										</div>
-									</div>
-								</div> 
-							
-							</div>
-					
-						
-					
-									
-					
+						</div>
 					</div>
+					</div>
+					
 				</div>
 			</div>
-			</div>
+		</div>
+	</div>
+</div>
 </template>

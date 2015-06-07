@@ -16,7 +16,7 @@
 						"capacity" : " ",
 						"from"	   : " ",
 						"to"	   : " ",
-						
+						"spaceidx" : " ",
 								
 					"spacedata" : [
 					{
@@ -32,6 +32,16 @@
 						"day"	   : "120",
 						"hour"	   : "20",
                         "description" : "Heller Raum mit Blick auf den Fernsehturm",
+                		"images" : [
+										{
+											"id" : "12",
+											"path" : "./apps/app/img/room1.jpg"
+										},
+										{
+											"id" : "13",
+											"path" : "./apps/app/img/room2.jpg"
+										}
+									],
 						"facilities" : [
 											{
 												"id" : "8910",
@@ -61,7 +71,17 @@
 						"day"	   : "140",
 						"hour"	   : "68",
                         "description" : "Heller Raum mit Blick auf den Wannsee",
-						"facilities" : [
+                        "images" : [
+									{
+										"id" : "16",
+										"path" : "./apps/app/img/room1.jpg"
+									},
+									{
+										"id" : "17",
+										"path" : "./apps/app/img/room2.jpg"
+									}
+								],
+                        "facilities" : [
 											{
 												"id" : "8910",
 												"name" : "Beamer",
@@ -91,7 +111,17 @@
 							"day"	   : "120",
 							"hour"	   : "20",
 	                        "description" : "Loft mit 10 Plätzen",
-							"facilities" : [
+	                        "images" : [
+										{
+											"id" : "14",
+											"path" : "./apps/app/img/room1.jpg"
+										},
+										{
+											"id" : "15",
+											"path" : "./apps/app/img/room2.jpg"
+										}
+									],
+	                        "facilities" : [
 												{
 													"id" : "8910",
 													"name" : "Beamer",
@@ -120,7 +150,17 @@
 							"day"	   : "120",
 							"hour"	   : "20",
 	                        "description" : "Schöner, heller Arbeitslatz im Prenzlauer Berg",
-							"facilities" : [
+	                        "images" : [
+										{
+											"id" : "18",
+											"path" : "./apps/app/img/room1.jpg"
+										},
+										{
+											"id" : "19",
+											"path" : "./apps/app/img/room2.jpg"
+										}
+									],
+	                        "facilities" : [
 												{
 													"id" : "8920",
 													"name" : "Drucker",

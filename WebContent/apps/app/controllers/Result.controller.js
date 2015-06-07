@@ -137,7 +137,7 @@ ui5strap.Action.run({
 		"transition" : "transition-flip",
 		"writeHistory" : true,
 		"bookmarkable" : true,
-		"orgId" : space.id
+		"spaceId" : space.id
 	}
 
     },
