@@ -92,8 +92,6 @@ ui5strap.Action.run({
 	
 	
 	},
-
-	
 getprop : function(oEvent){
 		
 			this.nc = this.getApp().getFrame().control; 
@@ -103,7 +101,7 @@ getprop : function(oEvent){
 	
 	oModel = this.getApp().getRootControl().getModel("meetdesk");
 	
-	var searchString = oModel.getProperty("/appdata/org");
+	var searchString = oModel.getProperty("/appdata/spacedata");
 	
 	var srcButton = oEvent.getSource();
 
@@ -111,9 +109,9 @@ getprop : function(oEvent){
 
 var oPath = srcButton.oBindingContexts.meetdesk.sPath;
 
-var org = oModel.getProperty(oPath);
+var space = oModel.getProperty(oPath);
 
-		alert(org.id);
+		alert(space.id);
 //oModel.setProperty("/appdata/detail_path", oString1);		
 
 //this.getApp().getRootControl().setModel(oModel);
@@ -139,7 +137,7 @@ ui5strap.Action.run({
 		"transition" : "transition-flip",
 		"writeHistory" : true,
 		"bookmarkable" : true,
-		"orgId" : org.id
+		"orgId" : space.id
 	}
 
     },

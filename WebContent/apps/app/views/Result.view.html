@@ -99,9 +99,6 @@
 
 			</div>
 		</div>
-
-
-
 		<!-- Container Form -->
 		<div data-sap-ui-type="ui5strap.ScrollContainer" data-vertical="true">
 			<div data-sap-ui-type="ui5strap.Container" data-type="FluidInset">
@@ -110,16 +107,13 @@
 					<!-- 2. Spalte -->
 					<div data-sap-ui-type="ui5strap.Col" data-columns-small="4"
 						data-columns-medium="6" data-columns-large="8">
-
-
 						<div data-sap-ui-type="ui5strap.Container" data-type="FluidInset"
-							data-content="{meetdesk&gt;/appdata/org}">
+							data-content="{meetdesk&gt;/appdata/spacedata}">
 										
 							<div class="block" data-sap-ui-type="ui5strap.Button"
 								data-type="Block" data-tap="getprop">
 								-->
 								<div data-sap-ui-type="ui5strap.Row">
-
 
 									<!-- Image -->
 									<div data-sap-ui-type="ui5strap.Col" data-columns-medium="6"
@@ -151,7 +145,7 @@
 											</div>
 										</div>
 									</div>
-									<!-- Orgname Description -->
+									<!-- Room Description -->
 									<div data-sap-ui-type="ui5strap.Col" data-columns-medium="6"
 										data-columns-large="6">
 										<div data-sap-ui-type="ui5strap.Container">
@@ -164,17 +158,18 @@
 												data-trailing-space="true"></div>
 											<div data-sap-ui-type="ui5strap.Paragraph"
 												data-text="{i18n&gt;PAGE3_CAPACITY}"
-												data-trailing-space="true"></div>
+												data-trailing-space="true">
+											<div class="capacity"  data-sap-ui-type="ui5strap.Label" data-severity="None"
+												data-text="{meetdesk&gt;capacity}"></div>
+												</div>
 											<div data-sap-ui-type="ui5strap.Link" data-href="#"
-												data-text="{meetdesk&gt;description}"></div>
-											<div data-sap-ui-type="ui5strap.Paragraph"
-												data-text="{meetdesk&gt;description}"
+												data-text="{meetdesk&gt;orgname}"
 												data-trailing-space="true"></div>
-
+										  <div data-sap-ui-type="ui5strap.Paragraph"
+												data-text="{meetdesk&gt;orgdescription}"
+												data-trailing-space="true"></div>
 										</div>
 									</div>
-
-
 								</div>
 							</div>
 							
@@ -190,7 +185,7 @@
 							data-height="800px" data-zoom="12"
 							data-lat="{ path : 'meetdesk&gt;/appdata/city_lat' }"
 							data-lng="{ path : 'meetdesk&gt;/appdata/city_lng' }"
-							data-markers="{meetdesk&gt;/appdata/org}">
+							data-markers="{meetdesk&gt;/appdata/spacedata}">
 
 							<div data-sap-ui-type="openui5.googlemaps.Marker"
 								data-lat="{meetdesk&gt;lat}" data-lng="{meetdesk&gt;lng}"
