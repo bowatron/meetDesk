@@ -1,0 +1,79 @@
+<template data-controller-name="tld__domain.product__app.controllers.Page3">
+	
+	<div data-sap-ui-type="ui5strap.Page" id="Page3">
+		<div data-sap-ui-aggregation="head">
+		</div>
+		<div data-sap-ui-type="ui5strap.Heading" data-level="2" data-text="{i18n>PAGE3_LEAD1}"></div>
+		<div data-sap-ui-type="ui5strap.Heading" data-align="center" data-level="4" data-text="{i18n>PAGE3_LEAD2}"></div>
+			
+			<div data-sap-ui-aggregation="body">
+					
+			<!-- Container Form -->
+	<div data-sap-ui-type="ui5strap.Container" data-type="Fluid" class="form"> 
+		<div data-sap-ui-type="ui5strap.Row">
+		<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+		
+						<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">
+					
+					<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE3_ROOMTYPE}" data-label-small="2">
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+
+							<div data-sap-ui-type="ui5strap.ButtonDropdown" data-text="{i18n>PAGE3_LIST_CROOM}" >
+								<div data-sap-ui-type="ui5strap.ListDropdownMenu" data-tap="buttonDropdownTap"  data-selection-mode="SingleMaster" data-update-master-text="true" >
+									<div data-sap-ui-type="ui5strap.ListLinkItem" data-text="{i18n>PAGE3_LIST_CROOM}"></div>
+									<div data-sap-ui-type="ui5strap.ListLinkItem" data-text="{i18n>PAGE3_LIST_OOFFICE}"></div>
+									<div data-sap-ui-type="ui5strap.ListLinkItem" data-text="{i18n>PAGE3_LIST_OFFICE}"></div>
+									<div data-sap-ui-type="ui5strap.ListLinkItem" data-text="{i18n>PAGE3_LIST_LOFT}"></div>
+								</div>
+							</div>				
+						</div>
+					</div>
+
+				
+					<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE3_NAME}" data-label-small="2">
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+							<div data-sap-ui-type="ui5strap.TextInput" data-value="{ path : 'meetdesk>/spacedata/0/name' }" data-placeholder="{i18n>PAGE3_NAME}"></div>
+						</div>
+					</div>
+			
+					<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE3_CAPACITY}" data-label-small="2">
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+							<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>PAGE3_CAPACITY}"></div>
+						</div>
+					</div>
+		
+					<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE3_DESCR}"  data-label-small="2"  data-feedback="true">
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+							<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>PAGE3_DESCR}" data-rows="4" ></div>
+						</div>
+					</div>
+					<div class="link" data-sap-ui-type="ui5strap.Paragraph">
+						<div data-sap-ui-type="ui5strap.Button" data-text="{i18n>BTN_NEXT}"  data-severity="Info" class="button" data-tap="__execute"  data-custom-data:__action="tld__domain.product__app.actions.GotoPage4">
+
+							<div data-sap-ui-type="ui5strap.Icon" data-icon="chevron-right"></div>
+						</div>
+					
+				</div>
+				
+				</div>
+		</div>
+				</div>			
+	</div>
+			
+			
+			<!--	<div data-sap-ui-type="ui5strap.Container" data-type="Fluid" class="sharedesk" >
+
+					
+					
+					
+					
+					
+					
+					<div data-sap-ui-type="ui5strap.TextInput" data-value="{ path : 'meetdesk>/page/title' }"   data-placeholder="{i18n>MAIN_LEAD1}" data-size="ExtraSmall" id="searchField"></div>
+
+					<div data-sap-ui-type="ui5strap.TextInput" data-value="{ path : 'meetdesk>/page/title' }" data-placeholder="{i18n>MAIN_LEAD1}" data-size="ExtraSmall" id="searchField1"></div>
+						
+		     	</div> 
+			</div>-->
+	</div>
+</template>

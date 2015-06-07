@@ -1,0 +1,317 @@
+/*
+ *
+ * My App Stylesheet
+ * 
+ * Author: [Your name]
+ * 
+ * Copyright (c) 2014 [Your Company]
+ * 
+ * [Your website]
+ *
+ * [Your license information]
+ * 
+ */
+
+/*
+* Index carousel
+*/
+.index-carousel-page{
+	padding:10px;
+	height:100%;
+}
+
+/*
+* Heading within index carousel
+*/
+.intro-heading{
+	font-size: 20px;
+	margin-top:10px;
+}
+
+.intro-lead{
+	font-size: 16px;
+}
+
+.big-icons{
+	text-align: center;
+	font-size: 80px;
+	line-height:80px;
+	margin-top:40px;
+	color:#025D8C;
+}
+
+/*
+* Skip intro link
+*/
+.skip-intro-link{
+	position:absolute;
+	top:10px;
+	right:10px;
+	font-size: 24px;
+	cursor:pointer;
+}
+
+/*
+* Next page link
+*/
+.next-intro-link{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	font-size: 120%;
+}
+
+@media (min-width: 640px) {
+	.index-carousel-page{
+		padding:15px;
+	}
+
+	.intro-heading{
+		font-size: 22px;
+		margin-top:10px;
+	}
+
+	.big-icons{
+		font-size: 110px;
+	}
+
+	.intro-lead{
+		font-size: 18px;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	.index-carousel-page{
+		padding:20px;
+	}
+
+	.intro-heading{
+		font-size: 24px;
+		margin-top:10px;
+		margin-bottom:15px;
+	}
+
+	.skip-intro-link{
+		top:20px;
+		right:20px;
+		font-size: 26px;
+	}
+
+	.intro-lead{
+		font-size: 20px;
+		margin-bottom:15px;
+	}
+
+	.big-icons{
+		font-size: 130px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.index-carousel-page{
+		padding:30px;
+	}
+
+	.intro-heading{
+		font-size: 28px;
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+
+	.intro-lead{
+		font-size: 22px;
+		margin-bottom:20px;
+	}
+
+	.big-icons{
+		margin-top:80px;
+		font-size: 150px;
+	}
+}
+
+
+
+/*
+* Standard page with white gradient when using standard theme
+*/
+.sapUiTheme-base .page-white{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f9f9f9 61%, #e2e2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(61%,#f9f9f9), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f9f9f9 61%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f9f9f9 61%,#e2e2e2 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f9f9f9 61%,#e2e2e2 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f9f9f9 61%,#e2e2e2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e2e2e2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	color:#090909;
+	
+}
+
+.body{
+	text-align:left;
+	padding:60px;
+	margin-left: 10%; 
+	margin-right: 1000;
+
+
+}
+
+.searchbar{
+	text-align:left;
+	padding:60px;
+	margin-left: 10%; 
+	margin-right: auto;
+}
+
+
+.registry{
+	text-align:left;
+	padding:60px;
+	margin-left: 10%; 
+	margin-right: auto;
+}
+
+
+.login{
+	text-align:left;
+	padding:60px;
+	margin-left: 10%; 
+	margin-right: auto;
+}
+
+
+.addRoom{
+	text-align:left;
+	padding:60px;
+	margin-left: 10%; 
+	margin-right: auto;
+}
+
+.form{
+	text-align:left;
+	padding:60px;
+	margin-left: 10%; 
+	margin-right: 10%;
+}
+
+.main{
+	    background-image: url("../img/pic_back1.jpg") ;
+    background-size: cover;
+height: 100%;
+	}
+	
+.button{
+
+	text-align:right;
+
+
+}
+
+.checkboxform{
+	text-align:right;
+}
+
+
+
+.link{
+	text-align:right;
+	margin-left: 0%; 
+	margin-right: 30;
+}
+
+.btn_back{
+	text-align:left;
+	margin-left: 0%; 
+	margin-right: 30;
+}
+
+.spacedata{
+	
+	background-color: #f8f8f8;
+    position: relative;
+    margin-bottom: 10px;
+    border-style: none;    
+}
+
+.search{
+	
+	background-color: #f8f8f8;
+    position: relative;
+    margin-bottom: 10px;
+    border-style: none;    
+}
+
+
+.searchform{
+    margin-top: 10px;
+}
+
+.img1{
+	
+width: 500px;
+
+}
+
+.img_2{
+	
+
+   
+}
+
+.balken{
+
+ background-color: #E05814;  
+
+}
+.panel{
+	
+	background-color: #f8f8f8;   
+
+border-style: none;    
+}
+
+.map{
+margin-top: -20px;
+	margin-left: -20px;
+
+   } 
+
+.spaceinfo{
+	
+
+/*margin-left: 280px;
+ */
+
+  } 
+
+.block{
+	margin-top: -20px;
+	margin-left: -20px;
+	background-color: #f8f8f8;
+    border-style: none;    
+}
+
+  .page{
+	padding:60px;
+    margin-left: 150;
+	margin-right: 150;
+   }   
+ 
+.price { 
+  background-color: #01abb5;
+opacity: 0.5;
+   margin-top: -100px;
+ 
+}
+  
+.img_text { 
+   color: white;
+ /*  margin-top: -20px; */
+ opacity: 1.2 !important;
+ text-align:left;
+margin-top: -10px;
+
+}

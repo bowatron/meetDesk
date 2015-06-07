@@ -1,0 +1,254 @@
+{
+        "app" : {
+            "name" : "meetDesk",
+            "id" : "tld.domain.product.app",
+            "package" : "tld__domain.product__app",
+            "title" : "meetDesk",
+            "history" : true,
+            "logLevel" : 5,
+            "theme" : "ui5strap_default"
+        },
+
+        "icons" : {
+            "default" : "img/meetdesklogo.png"
+        },
+
+        "developers" : [
+            {
+                "name" : "My Name",
+                "email" : "me@domain.tld",
+                "timezone" : -1,
+                "roles" : [
+                    "Developer"
+                ]
+            }
+        ],
+
+        "licenses" : [
+            {
+                "name" : "Apache2 License",
+                "url" : "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+        ],
+
+        "libraries" : [ 
+            {
+                "id" : "tld.domain.shared.lib",
+                "package" : "tld__domain.shared__lib",
+                "location" : "./lib/tld__domain/shared__lib/"
+            }
+            
+        ],
+
+        "css" : [
+            "css/my-app.css"
+        ],
+
+        "models" : [
+            {
+                "src" : "i18n/i18n.properties",
+                "type" : "RESOURCE",
+                "modelName" : "i18n" 
+            },
+            {
+                "src" : "data/data-example.json",
+                "type" : "JSON",
+                "modelName" : "data" 
+            },
+            
+            {
+                "src" : "data/data-meetdesk.json",
+                "type" : "JSON",
+                "modelName" : "meetdesk" 
+            }
+        ],
+
+
+        "events" : {
+
+            "app" : {},
+
+            "controller" : {}
+
+        },
+
+        "views" : {
+        	"tld__domain.product__app.views.main" : {
+                "type" : "HTML",
+                
+                "id" : "my-app-intro",
+                "styleClass" : "page-intro",
+
+                "documentTitle" : "i18n>MAIN_HEADING",
+                "sidebar" : false,
+                "target" : "content",
+                "preload" : true
+
+               
+            },
+
+            "tld__domain.product__app.views.Page1" : {
+                "type" : "HTML",
+                
+                "id" : "my-app-page1",
+                "styleClass" : "page-white page-1",
+
+                "documentTitle" : "i18n>PAGE1_HEADING",
+                
+                "target" : "content",
+                "preload" : true
+            },
+
+            "tld__domain.product__app.views.Page2" : {
+                "type" : "HTML",
+                
+                "id" : "my-app-page2",
+                "styleClass" : "page-white page-2",
+
+                "documentTitle" : "i18n>PAGE2_HEADING",
+                
+                "target" : "content",
+                "preload" : true
+            },
+
+            "tld__domain.product__app.views.Page3" : {
+                "type" : "HTML",
+                
+                "id" : "my-app-page3",
+                "styleClass" : "page-white page-3",
+
+                "documentTitle" : "i18n>PAGE3_HEADING",
+                
+                "target" : "content",
+                "preload" : true
+            },
+            
+              "tld__domain.product__app.views.Page4" : {
+                "type" : "HTML",
+                
+                "id" : "my-app-page4",
+                "styleClass" : "page-white page-4",
+
+                "documentTitle" : "i18n>PAGE4_HEADING",
+                
+                "target" : "content",
+                "preload" : true
+            },
+            
+                 "tld__domain.product__app.views.Detail" : {
+                "type" : "HTML",
+                
+                "id" : "my-app-Detail",
+                "styleClass" : "page-white detail",
+
+                "documentTitle" : "i18n>PAGE4_HEADING",
+                
+                "target" : "content",
+                "preload" : true
+            },
+            
+            "tld__domain.product__app.views.Result" : {
+                "type" : "HTML",
+                
+                "id" : "my-app-Result",
+                "styleClass" : "page-white result",
+
+                "documentTitle" : "i18n>RESULT_HEADING",
+                "sidebar" : false,
+                "target" : "content",
+                "preload" : true
+            }
+        },
+
+        "menus" : {
+            "myMenu" : {
+                "items" : [
+                       {
+                            "viewName" : "tld__domain.product__app.views.Page1",
+                            "label" : "i18n>MENU_PAGE1",
+                            "icon" : "user",
+                            "writeHistory" : true
+                        },
+                        {
+                            "viewName" : "tld__domain.product__app.views.Page2",
+                            "label" : "i18n>MENU_PAGE2",
+                            "icon" : "envelope",
+                            "writeHistory" : true
+                        },
+                        {
+                            "viewName" : "tld__domain.product__app.views.Page3",
+                            "label" : "i18n>MENU_PAGE4",
+                            "icon" : "plus",
+                            "writeHistory" : true
+                        },
+                         {
+                            "viewName" : "tld__domain.product__app.views.main",
+                            "label" : "i18n>MENU_PAGE3",
+                            "icon" : "question",
+                            "writeHistory" : true
+                        }
+                ]
+            },
+            "myNav1" : {
+                "items" : [
+                       {
+                            "viewName" : "tld__domain.product__app.views.Page3",
+                            "label" : "i18n>NAVBAR_1",
+                            "icon" : "globe",
+                            "writeHistory" : true
+                        },
+                        {
+                            "viewName" : "tld__domain.product__app.views.Page4",
+                            "label" : "i18n>NAVBAR_2",
+                            "icon" : "th",
+                            "writeHistory" : true
+                        },
+                        
+                            {
+                            "viewName" : "tld__domain.product__app.views.Page2",
+                            "label" : "i18n>NAVBAR_3",
+                            "icon" : "calendar",
+                            "writeHistory" : true
+                        },
+                        
+                        {
+                            "viewName" : "tld__domain.product__app.views.Page5",
+                            "label" : "i18n>NAVBAR_4",
+                            "icon" : "eur",
+                            "writeHistory" : true
+                        },
+                         {
+                            "viewName" : "tld__domain.product__app.views.main",
+                            "label" : "i18n>NAVBAR_5",
+                            "icon" : "money",
+                            "writeHistory" : true
+                        }
+                ]
+            }
+
+        },
+
+        "components" : [
+            {
+                
+                "id" : "frame",
+                "module" : "tld__domain.product__app.modules.AppFrameExample",
+                
+                "initialViews" : [
+                                  { 
+                                      "viewName" : "tld__domain.product__app.views.main"
+                                  }
+                              ],
+                
+                "navbar" : true,
+                "navbarMenu" : "myMenu",
+                "sidebarMenu" : "myNav1",
+                "sidebar" : true,
+                "sidebarSmall" : true,
+                "events" : ["app.shown"]
+            
+     
+            
+            }
+        ]
+}

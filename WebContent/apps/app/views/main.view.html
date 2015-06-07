@@ -1,0 +1,36 @@
+<template data-controller-name="ui5strap.ActionController">
+	<div data-sap-ui-type="ui5strap.Page">
+			<div data-sap-ui-aggregation="head">
+			</div>
+			<div data-sap-ui-aggregation="body">
+				<div class="main" data-sap-ui-type="ui5strap.Container" data-type="Fluid">	
+				<div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div>
+					<div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div>
+					
+						<div  data-sap-ui-type="ui5strap.Container" data-type="Fluid" class="searchbar" data-align="CenterBlock">
+							<div data-sap-ui-type="ui5strap.Row">
+								<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+									<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">	
+											<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+												<div data-sap-ui-type="ui5strap.FormGroup" data-label=""  data-label-small="2" data-severity="None" data-feedback="true">
+													<div data-sap-ui-type="ui5strap.Col" data-columns-extra-small="8" data-columns-small="8" data-columns-medium="8" data-columns-large="8">
+														<div id="searchstring" data-sap-ui-type="ui5strap.TextInput" data-value="{ path : 'meetdesk>/appdata/searchstring' }" data-placeholder="{i18n>MAIN_LEAD1}"></div>
+													</div>
+													<div data-sap-ui-type="ui5strap.Col" data-columns-extra-small="2" data-columns-small="4" data-columns-medium="4" data-columns-large="4">
+														<div data-sap-ui-type="ui5strap.Button" data-text="{i18n>BTN_SEARCH}" data-tap="__execute" data-severity="Info" data-custom-data:__action="tld__domain.product__app.actions.GotoResult">
+															<div data-sap-ui-type="ui5strap.Icon" data-icon="search"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+			
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+	</div>
+	
+</template>
+	

@@ -1,0 +1,527 @@
+{
+
+	"page" : {
+		"title" : "meetDesk",
+		"lead" : "Find and Share Rooms"
+	},
+	
+	"appdata" : {
+				
+					    
+						"searchstring" : " ",
+						"username" : "delphin",
+						"city_lat" : "52.51861",
+						"city_lng" : "13.40529",
+						"room"	   : " ",
+						"capacity" : " ",
+						"from"	   : " ",
+						"to"	   : " ",
+						
+                     "org" : [
+					{
+						"name" : "Radisson",
+						"description" : "Unter den Linden",
+						"lat" : "52.54",
+						"lng" : "13.40529",
+						"id"  : "1",
+						"day" : "120"	,
+						"hour": "20",
+						"img" : "./apps/app/img/room1.jpg",
+								
+					"spacedata" : [
+					{
+				
+						"id" : "1234",
+						"type" : "Tagungsraum",
+                        "orgid" : "1234",
+                        "name" : "Raum Dresden",
+						"capacity" : "20",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Heller Raum mit Blick auf den Fernsehturm",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										],
+						"lat" : "52.53174",
+						"lng" : "13.40529"				
+					  },		
+					  {
+				
+						"id" : "1235",
+						"type" : "Büro",
+                        "orgid" : "1234",
+                        "name" : "Raum Berlin",
+						"capacity" : "15",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Heller Raum mit Blick auf den Wannsee",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										],
+						"lat" : "52.54",
+						"lng" : "13.40529"	
+					  },
+					  {
+				
+						"id" : "1236",
+						"type" : "Loft",
+                        "orgid" : "1235",
+                        "name" : "Hana",
+						"capacity" : "10",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Loft mit 10 Plätzen",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										],
+						"lat" : "52.54",
+						"lng" : "13.42"	
+					  }			
+			 	
+			 	]
+			 	},
+			 	{
+						"name" : "COWOX",
+						"description" : "Coworking im Kiez",
+						"lat" : "52.3243",
+						"lng" : "13.2508",
+						"id"  : "2",
+						"day" : "340"	,
+						"hour": "67",
+						"img" : "./apps/app/img/room2.jpg",
+						
+					"spacedata" : [
+					{
+				
+						"id" : "1235",
+						"type" : "Coworking-Platz",
+                        "orgid" : "1235",
+                        "name" : "Cowox 2",
+						"capacity" : "1",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Schöner, heller Arbeitslatz im Prenzlauer Berg",
+						"facilities" : [
+											{
+												"id" : "8920",
+												"name" : "Drucker",
+												"amount" : "1",
+												"description" : "Laserjet" 
+											},
+											{
+												"id" : "8921",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										]
+										
+					  },		
+					  {
+				
+						"id" : "12356",
+						"type" : "Coworking-Platz",
+                        "orgid" : "1235",
+                        "name" : "Cowox 11",
+						"capacity" : "1",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Heller Raum mit Blick auf den Helmholzplatz",
+						"facilities" : [
+											{
+												"id" : "8912",
+												"name" : "Festnetz",
+												"amount" : "1",
+												"description" : "" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										]
+						
+					  },
+					  {
+				
+						"id" : "1236",
+						"type" : "Coworking-Platz",
+                        "orgid" : "1235",
+                        "name" : "Cowox 7",
+						"capacity" : "1",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Heller Raum mit Telefon",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										]
+							
+					  }			
+			 	
+			 	]
+			 	},
+			 	{
+						"name" : "Meetcentral",
+						"description" : "Kreative unter sich",
+						"lat" : "52.3136",
+						"lng" : "13.2343",
+						"id"  : "4",
+						"day" : "580"	,
+						"hour": "85",
+						"img" : "./apps/app/img/room4.jpg",
+						
+					"spacedata" : [
+					{
+				
+						"id" : "1234",
+						"type" : "Coworking-Platz",
+                        "orgid" : "12346",
+                        "name" : "Cenral-Cowork 1",
+						"capacity" : "2",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Heller Platz für 2 im Herzen der Stadt",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										]
+										
+					  },		
+					  {
+				
+						"id" : "1235",
+						"type" : "Meetingraum",
+                        "orgid" : "12346",
+                        "name" : "Central-Meeting 4",
+						"capacity" : "15",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Schöner Tagungsraum für bis zu 15 Personen",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										]
+						
+					  },
+					  {
+				
+						"id" : "1236",
+						"type" : "Gemeinschaftbüro",
+                        "orgid" : "12346",
+                        "name" : "Central-Büro 3",
+						"capacity" : "10",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Büro mit eigener Küche und WC",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										],
+						"lat" : "52.3136",
+						"lng" : "13.2343"	
+					  }			
+			 	
+			 	]
+			 	},
+			 	 	{
+						"name" : "Aloha Berlin",
+						"description" : "Die Adresse für Coworking und Co",
+						"lat" : "52.3209",
+						"lng" : "13.2428",
+						"id"  : "3",
+						"day" : "2120"	,
+						"hour": "120",
+						"img" : "./apps/app/img/room3.jpg",
+						
+					"spacedata" : [
+					{
+				
+						"id" : "1234",
+						"type" : "Coworking-Platz",
+                        "orgid" : "12347",
+                        "name" : "Platz Kapaa",
+						"capacity" : "1",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Viel Raum für Idee",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										],
+						"lat" : "52.3209",
+						"lng" : "13.2428"				
+					  },		
+					  {
+				
+						"id" : "1235",
+						"type" : "Meetingraum",
+                        "orgid" : "12347",
+                        "name" : "Meetingraum Poipu",
+						"capacity" : "20",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Schöner Tagungsraum für bis zu 20 Personen",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										],
+						"lat" : "52.3209",
+						"lng" : "13.2428"	
+					  },
+					  {
+				
+						"id" : "1236",
+						"type" : "Atelier",
+                        "orgid" : "12347",
+                        "name" : "Atelier Princeville ",
+						"capacity" : "10",
+						"day"	   : "120",
+						"hour"	   : "20",
+                        "description" : "Tageslicht-Atelier mit Blick auf die Zionskirche",
+						"facilities" : [
+											{
+												"id" : "8910",
+												"name" : "Beamer",
+												"amount" : "1",
+												"description" : "HD fähig" 
+											},
+											{
+												"id" : "8911",
+												"name" : "WLAN",
+												"amount" : "1",
+												"description" : "3 MBit" 
+											}
+										],
+						"lat" : "52.3209",
+						"lng" : "13.2428"	
+					  }			
+			 	
+			 	]
+			 	}
+			             ]
+			             },
+	"personaldata" : {
+				
+					    
+						"id" : "1234",
+						"password" : "delphin",
+                        "first_name" : "Oliver",
+                        "last_name" : "Schmidt",
+						"titel" : "Dr.",
+                        "position" : "Executive Manager",
+						"adress" : [
+								{
+									"id" : "8910",
+									"street" : "Bernauer Str.",
+                                    "number" : "14",
+						 			"postcode" : "10357", 
+									"country" : "Deutschland",
+						 			"destrict" : "Berlin"
+								}
+							       ],
+						"communication" : [
+								{
+									"id" : "8910",
+									"type" : "privat",
+                               		"is_standard" : "x",
+						 			"phone" : "030/2143565", 
+									"mobile" : "0176/39281778",
+						 			"fax" : "2143565-21",
+                                    "email" : "oschmidt@web.de",
+						 			"web" : "www.oservices.com"
+								}
+							       ],
+						"payment" : [
+								{
+									"id" : "4567",
+									"bank_name" : "DKB",
+                                  	"iban" : "DFHhj738927",
+						 			"bic" : "12345678987654" 
+								}
+							       ]
+					  },
+"widgets" : [
+		{
+			
+			"data" : {
+				"caption" : "About",
+				"text" :  "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur."
+			}
+
+		},
+		{
+			
+			"data" : {
+				"caption" : "Archives",
+				"items" : [
+					{
+						"text" : "January 2014",
+						"value" : "2014-01"
+					},
+					{
+						"text" : "December 2013",
+						"value" : "2013-12"
+					},
+					{
+						"text" : "November 2013",
+						"value" : "2013-11"
+					},
+					{
+						"text" : "October 2013",
+						"value" : "2013-10"
+					},
+					{
+						"text" : "September 2013",
+						"value" : "2013-09"
+					},
+					{
+						"text" : "August 2013",
+						"value" : "2013-08"
+					},
+					{
+						"text" : "July 2013",
+						"value" : "2013-07"
+					},
+					{
+						"text" : "June 2013",
+						"value" : "2013-06"
+					},
+					{
+						"text" : "May 2013",
+						"value" : "2013-05"
+					},
+					{
+						"text" : "April 2013",
+						"value" : "2013-04"
+					},
+					{
+						"text" : "March 2013",
+						"value" : "2013-1"
+					},
+					{
+						"text" : "February 2013",
+						"value" : "2013-02"
+					}
+				]
+			}
+
+		},
+
+		{
+			
+			"data" : {
+				"caption" : "Elsewhere",
+				"items" : [
+					{
+						"text" : "GitHub",
+						"value" : "http://github.com"
+					},
+					{
+						"text" : "Twitter",
+						"value" : "http://twitter.com"
+					},
+					{
+						"text" : "Facebook",
+						"value" : "http://facebook.com"
+					}
+				]
+			}
+		}
+	]
+		
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<!-- Preload title -->
+		<title>Ui5Strap</title>
+
+		<!-- 
+			Preload Stylesheet 
+			Changed in 0.8! Please remove your preload stylesheet or include it into the app's css file.
+		-->
+		<link rel="stylesheet" type="text/css" href="lib/ui5strap/preload.css" />
+
+		<!-- Content Type -->
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		
+		<!-- Internet Explorer -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+		<!-- Viewport settings -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		
+		<!-- IOS Webapp settings -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon" sizes="144x144" href="./apps/app/img/meetdesklogo.png" />
+
+		<!-- Fav icon -->
+		<link rel="shortcut icon" href="./apps/app/img/meetdesklogo.png" />
+
+		<!--
+			Splash Screen Style 
+			Changed in 0.8: the Splash Screen style is now inline! 
+		-->
+		<style>
+			/*
+			* Splash Screen
+			*/
+			#ui5strap-splash-screen{
+				background: #dedede; /* Old browsers */
+				background: -moz-linear-gradient(top, #dedede 0%, #afafaf 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dedede), color-stop(100%,#afafaf)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #dedede 0%,#afafaf 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #dedede 0%,#afafaf 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, #dedede 0%,#afafaf 100%); /* IE10+ */
+				background: linear-gradient(to bottom, #dedede 0%,#afafaf 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#afafaf',GradientType=0 ); /* IE6-9 */
+			}
+
+			/*
+			* Splash Screen Window
+			*/
+			#ui5strap-splash-screen-window{
+				position:absolute;
+
+				width:192px; 
+				height:256px;
+				
+				left:50%;
+				top:50%;
+				
+				margin-top:-128px;
+				margin-left:-96px;
+			}
+
+			/*
+			* Splash Screen Logo
+			*/
+			#ui5strap-splash-screen-logo{
+				position:absolute;
+				
+				width:128px;
+				height:128px;
+				left:50%;
+				top:0;
+				margin-left:-64px;
+			}
+
+			/*
+			* Splash Screen Spinner
+			*/
+			#ui5strap-splash-screen-spinner{
+				position:absolute;
+				
+				width:24px;
+				height:24px;
+				left:50%;
+				top:152px;
+				margin-left:-12px;
+
+				background-image:url('apps/app/img/spinner-black.png');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size:cover;
+				
+				-webkit-animation: spin 2s infinite linear;
+				-moz-animation: spin 2s infinite linear;
+				-o-animation: spin 2s infinite linear;
+				animation: spin 2s infinite linear;
+
+				-webkit-transform: translate3d(0,0,0);
+				-moz-transform: translate3d(0,0,0);
+				-ms-transform: translate3d(0,0,0);
+				-o-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+			}
+
+			/*
+			* Splash Screen Message
+			*/
+			#ui5strap-splash-screen-message{
+				position:absolute;
+
+				width:100%;
+				height:32px;
+				left:0;
+				top:152px;
+				
+				line-height:32px;
+				text-align: center;
+				color:#888888;
+				font-size:24px;
+
+				opacity: 0;
+
+				transition: opacity .3s ease-in;
+				-webkit-transition: opacity .3s ease-in;
+				-moz-transition: opacity .3s ease-in;
+			}
+
+			#ui5strap-splash-screen-message.ui5strap-splash-screen-message-visible{
+				opacity: 1;
+			}
+		</style>
+	
+	</head>
+	
+	<body role="application">
+		
+		<!-- 
+			Root Container
+			Changed in 0.8: the Root Container has now a different id.
+		-->
+		<div id="ui5strap-container">
+			
+			<!-- 
+				Splash Screen
+				Changed in 0.8: the Splash Screen is now defined inside the Root Container.
+			-->
+			<div id="ui5strap-app-initial" class="ui5strap-app">
+				<div id="ui5strap-splash-screen" class="ui5strap-app-content">
+					<div id="ui5strap-splash-screen-window">
+						<img id="ui5strap-splash-screen-logo" src="./apps/app/img/meetdesklogo.png" />
+						<div id="ui5strap-splash-screen-spinner"></div>
+						<div id="ui5strap-splash-screen-message">Welcome</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<!--Ui5OS Home Bar. Will be used in future. -->
+		<div id="ui5os-bar-home">
+			<a id="ui5os-button-home"><span class="fa fa-home"></span></a>
+			<a id="ui5os-button-taskmanager"><span class="fa fa-exchange"></span></a>
+		</div>
+		
+
+		<!-- 
+			Global Overlay
+			Required for 0.8!
+		-->
+		<div id="ui5strap-overlay" class="ui5strap-overlay ui5strap-layer ui5strap-hidden">
+			<div id="ui5strap-overlay-backdrop" class="ui5strap-overlay-backdrop"></div>
+			<div id="ui5strap-overlay-content" class="ui5strap-overlay-content"></div>
+		</div>
+
+		<!-- Loading screen. Showing while the app is busy. -->
+		<div id="ui5strap-loader" class="ui5strap-layer ui5strap-loader ui5strap-hidden"></div>
+		
+		<!-- Fatal Error screen. Shown when a fatal error occurs. -->
+		<div id="ui5strap-fatal" class="ui5strap-layer">
+			<div id="ui5strap-fatal-message"></div>
+		</div>
+
+		<!-- No Script screen. Only visible when JavaScript is deactivated. -->
+		<noscript>
+			<div id="ui5strap-noscript" class="ui5strap-layer">
+				Ui5Strap requires JavaScript to be enabled.
+			</div>
+		</noscript>
+
+		<!-- Cordova Library (optional). Only needed when building native apps with Cordova. -->
+		<!-- <script type="text/javascript" src="cordova.js"></script> -->
+		
+		<!-- 
+			Minimized OpenUI5 library without sap.m and sap.ui.core.commons Controls. 
+			Changed in 0.8: If you need the full OpenUI5 library, please download it from http://openui5.org/ and include it here instead. 
+		-->
+		<script id="sap-ui-bootstrap" src="lib/openui5/sap-ui-core.js" data-sap-ui-xx-test-mobile="true" data-sap-ui-xx-bindingSyntax="complex"></script>
+		
+		<!-- Set Ui5Strap Library location. -->
+		<script>
+			jQuery.sap.registerModulePath("ui5strap", "lib/ui5strap/");
+		</script>
+
+		<!-- Include complete, minified Ui5Strap library at startup (optional) -->
+		<!-- <script id="ui5strap-bootstrap" src="lib/ui5strap/ui5strap-all.js"></script> -->
+
+		<!-- App Start -->
+		<script>
+
+			/*
+			* Define Viewer Options
+			* Use "app.defaultValue" to set the Default App. 
+			* It is used if no "app" GET parameter is present.
+			* For example, you can load the App "50 Buttons" also via http://localhost:8282/?app=apps/50buttons/app.json
+			*/
+			var viewerOptions = {
+				"app" : {
+					type : "URI",
+					uriParam : "app",
+					defaultValue : "./apps/app/app.json" //Default App
+				}
+			};
+
+			/*
+			* Initialize Viewer
+			*/
+			jQuery.sap.require("ui5strap.Viewer");
+			
+			//Wrap the start function with a callback function
+			var onDeviceReady = function(){
+				//The reference to the viewer instance should not be global
+				var viewer = new ui5strap.Viewer(viewerOptions);
+				
+				/*
+				* Viewer.prototype.start accepts two callback functions as parameters.
+				* The first callback is fired when the app has been completely started and shown.
+				* The second callback is fired when the app has been loaded but did not show yet.
+				* Both parameters are optional.
+				*/
+				viewer.start(null, function(){
+					//In this example we want to show the welcome message when the App has been loaded.
+					document.getElementById('ui5strap-splash-screen-spinner').className = 'ui5strap-hidden';
+					document.getElementById('ui5strap-splash-screen-message').className = 'ui5strap-splash-screen-message-visible';
+				});
+			};
+			
+			if(window.cordova){
+				//App is executed within Cordova
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+			else{
+				//Otherwise, trigger the callback immediately
+				onDeviceReady();
+			}
+			
+		</script>
+
+	</body>
+
+</html>

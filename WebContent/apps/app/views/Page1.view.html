@@ -1,0 +1,121 @@
+<template data-controller-name="tld__domain.product__app.controllers.Page1">
+
+		<div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div><div data-sap-ui-type="ui5strap.Break"></div>
+
+
+	<div data-sap-ui-type="ui5strap.Container" data-type="Fluid" class="form"> 
+
+		<div data-sap-ui-type="ui5strap.Row">
+			
+			<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+				<div class="link" data-sap-ui-type="ui5strap.Paragraph">
+				<div data-sap-ui-type="ui5strap.Text" data-text="{i18n>REGIST_SUBSCRTXT}"></div>
+				<div data-sap-ui-type="ui5strap.Link" data-text="{i18n>REGIST_SUBSCR}"  data-tap="showRegist" data-custom-data:__action="tld__domain.product__app.actions.GotoPage3">
+				</div>
+				</div>
+				
+				<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">
+					<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>REGIST_EMAIL}"  data-label-small="2" data-severity="None" data-feedback="true">
+						
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+							<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_EMAIL}" ></div>
+						</div>
+					</div>
+	
+					<div data-sap-ui-type="ui5strap.FormGroup"  data-label="{i18n>REGIST_PWD}" data-label-small="2">
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+							<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_PWD}"></div>
+						</div>
+					</div>
+				</div>
+					
+					<div class="link" data-sap-ui-type="ui5strap.Paragraph">
+						<div class="button" data-sap-ui-type="ui5strap.Button" data-size="Small" data-tap="checkLogin" data-text="{i18n>REGIST_LOGIN}" data-severity="Info" data-custom-data:__action="tld__domain.product__app.actions.GotoPage3">
+					<div data-sap-ui-type="ui5strap.Icon" data-icon="check"></div>
+					</div>
+					</div>
+					
+					
+			</div>
+		</div>
+
+	</div>	
+		
+	<div data-sap-ui-type="ui5strap.Modal" id="regist" data-backdrop="false" data-shown="modalShown" data-hidden="modalHidden">
+
+		<div data-sap-ui-aggregation="header">
+			<div data-sap-ui-type="ui5strap.Button" data-type="Close" data-bs-action="DismissModal">
+				<div data-sap-ui-type="ui5strap.Icon" data-icon="times"></div>
+			</div>
+			<div data-sap-ui-type="ui5strap.Image" data-src="./app/img/meetdesklogo.png" data-alt="Image" data-width="80%" data-height="80%" data-align="right"></div>
+			<div data-sap-ui-type="ui5strap.Heading" data-text="{i18n>REGIST_HEADING}">		
+			</div>
+		</div>
+		<div data-sap-ui-aggregation="body">
+								
+			<div data-sap-ui-type="ui5strap.Container" data-type="Fluid"> 
+					<div data-sap-ui-type="ui5strap.Row">
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+		
+							<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>REGIST_FIRSTNAME}" data-label-small="2">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+										<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_FIRSTNAME}"></div>
+									</div>
+								</div>
+				
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>REGIST_LASTNAME}" data-label-small="2">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+										<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_LASTNAME}"></div>
+									</div>
+								</div>
+			
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>REGIST_POS}" data-label-small="2">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+										<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_POS}"></div>
+									</div>
+								</div>
+		
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>REGIST_EMAIL}"  data-label-small="2" data-severity="Error" data-feedback="true">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+										<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_EMAIL}" ></div>
+									</div>
+								</div>
+	
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>REGIST_USERNAME}" data-label-small="2">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+										<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_USERNAME}"></div>
+									</div>
+								</div>
+	
+	
+								<div data-sap-ui-type="ui5strap.FormGroup"  data-label="{i18n>REGIST_PWD}" data-label-small="2">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+										<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_PWD}"></div>
+									</div>
+								</div>
+				
+								<div data-sap-ui-type="ui5strap.FormGroup"  data-label="{i18n>REGIST_PWD_CONF}" data-label-small="2">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="10">
+										<div data-sap-ui-type="ui5strap.TextInput" data-placeholder="{i18n>REGIST_PWD_CONF}"></div>
+									</div>
+								</div>
+							</div>
+								
+								<div class="link" data-sap-ui-type="ui5strap.Paragraph">
+								
+			<div class="button" data-sap-ui-type="ui5strap.Button" data-severity="Info" data-text="OK" data-bs-action="DismissModal" data-severity="Primary"></div>
+			<div class="button" data-sap-ui-type="ui5strap.Button"  data-text="Cancel" data-bs-action="DismissModal" data-severity="Default"></div>
+		
+							</div>
+						</div>
+					</div>
+			</div>
+			
+	
+	
+	
+	</div>
+	</div>
+
+</template>
