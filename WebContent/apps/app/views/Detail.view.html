@@ -4,10 +4,11 @@
 <div data-sap-ui-type="ui5strap.Page">
 	<div data-sap-ui-aggregation="head"></div>
 	<div data-sap-ui-type="ui5strap.Heading" data-level="2"
-		data-text="{i18n&gt;RESULT_HEADING}"></div>
+		data-text="{path : 'spaces&gt;/Type'}"></div>
 	<div data-sap-ui-type="ui5strap.Heading" data-align="center"
 		data-level="4" data-text="{ path : 'spaces&gt;/name' }"></div>
-
+<div data-sap-ui-type="ui5strap.Heading" data-align="center"
+		data-level="4" data-text="{ path : 'spaces&gt;/description' }"></div>
 	<div data-sap-ui-aggregation="body">
 
 
@@ -18,21 +19,179 @@
 				data-type="Fluid">
 				<div data-sap-ui-type="ui5strap.Row">
 
-					<div data-sap-ui-type="ui5strap.Col" data-columns-small="8">
+					<div data-sap-ui-type="ui5strap.Col" data-columns-small="12" data-columns-medium="6" data-columns-large="6">
 
-						<div data-sap-ui-type="ui5strap.Carousel" class="example-carousel" data-content="{meetdesk&gt;/appdata/spacedata}">
-          <div data-sap-ui-aggregation="content" data-sap-ui-type="ui5strap.Container"  data-type="FluidInset">
+						<div class="block" data-sap-ui-type="ui5strap.Carousel" class="example-carousel"
+							data-content="{spaces&gt;/images}">
 							<!-- Page 1 -->
-				
 
-								<div data-sap-ui-type="ui5strap.Heading" data-align="center"
-									data-level="4" data-text="{ path : 'spaces&gt;/name' }"></div>
-							
+							<div data-sap-ui-aggregation="content"
+								data-sap-ui-type="ui5strap.Container" data-type="FluidInset">
+								<div data-sap-ui-type="ui5strap.Container"
+									data-type="FluidInset">
+
+									<div class="img_1" data-sap-ui-type="ui5strap.Image"
+										data-src="{ path : 'spaces&gt;path'}" data-alt="Image"></div>
+								</div>
+							</div>
+						</div>
+
+	         <div data-sap-ui-type="ui5strap.Container">
+
+						<div data-sap-ui-type="openui5.googlemaps.Map" data-width="600px"
+							data-height="300px" data-zoom="12"
+							data-lat="{ path : 'spaces&gt;/lat' }"
+							data-lng="{ path : 'spaces&gt;/lng' }">
+
+							<div data-sap-ui-type="openui5.googlemaps.Marker"
+								data-lat="{spaces&gt;/lat}" data-lng="{spaces&gt;/lng}"
+								data-info="{spacesgt;/name}"></div>
+
+
+						</div>
+                </div>
+					</div>
+				
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="12" data-columns-medium="6" data-columns-large="6">
+			<div data-sap-ui-type="ui5strap.Row">
+						
+							<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+		
+							<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">
+								
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_OVERHEAD}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_OVERHEAD}" data-selected="false"></div>
+									</div>
+								</div>
+			
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_PIN}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_PIN}" data-selected="false"></div>
+									</div>
+								</div>
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_NET}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_NET}" data-selected="false"></div>
+									</div>
+									
+								</div>
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_CANVAS}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_CANVAS}" data-selected="false"></div>
+									</div>
+								</div>
+								
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_PRINTER}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_PRINTER}" data-selected="false"></div>
+									</div>
+								</div>	
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_POINTER}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_POINTER}" data-selected="false"></div>
+									</div>
+								</div>								
+							</div>
+						</div>
+						
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+		
+							<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">
+								
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_SPEAKDESK}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_SPEAKDESK}" data-selected="false"></div>
+									</div>
+								</div>
+			
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_DIMMING}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_DIMMING}" data-selected="false"></div>
+									</div>
+								</div>
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_TV}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_TV}" data-selected="false"></div>
+									</div>
+									
+								</div>
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_SPEAKER}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_SPEAKER}" data-selected="false"></div>
+									</div>
+								</div>
+								
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_COPIER}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_COPIER}" data-selected="false"></div>
+									</div>
+								</div>	
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_PROJECTOR}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_PROJECTOR}" data-selected="false"></div>
+									</div>
+								</div>	
+							</div>
+						</div>
+						
+						<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+		
+							<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">
+								
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_FAX}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_FAX}" data-selected="false"></div>
+									</div>
+								</div>
+			
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_WLAN}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_WLAN}" data-selected="false"></div>
+									</div>
+								</div>
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_DVD}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_DVD}" data-selected="false"></div>
+									</div>
+									
+								</div>
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_FLIPCHART}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_FLIPCHART}" data-selected="false"></div>
+									</div>
+								</div>
+								
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_WALLS}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_WALLS}" data-selected="false"></div>
+									</div>
+								</div>	
+					
+								<div data-sap-ui-type="ui5strap.FormGroup" data-label="{i18n>PAGE4_TOOLCASE}" data-label-small="8">
+									<div data-sap-ui-type="ui5strap.Col" data-columns-small="4">
+										<div  data-sap-ui-type="ui5strap.Checkbox" data-value="{i18n>PAGE4_TOOLCASE}" data-selected="false"></div>
+									</div>
+								</div>	
+															
+							</div>
+						</div>
+					</div>	
+	
 						</div>
 					</div>
-					</div>
-					
+				
+				
 				</div>
+
 			</div>
 		</div>
 	</div>

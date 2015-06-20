@@ -5,41 +5,84 @@
 	<div data-sap-ui-aggregation="head"></div>
 	<div data-sap-ui-type="ui5strap.Heading" data-level="2"
 		data-text="{i18n&gt;RESULT_HEADING}"></div>
-	<div data-sap-ui-type="ui5strap.Heading" data-align="center"
-		data-level="4"
-		data-text="{ path : 'meetdesk&gt;/appdata/searchstring' }"></div>
 
+	<div data-sap-ui-type="ui5strap.Row">
 
+		<div data-sap-ui-type="ui5strap.Col" data-columns-small="6"
+			data-columns-medium="6" data-columns-large="6">
+
+			<div data-sap-ui-type="ui5strap.Heading" data-align="center"
+				data-level="4"
+				data-text="{ path : 'meetdesk&gt;/appdata/searchstring' }"></div>
+
+		</div>
+
+		<div data-sap-ui-type="ui5strap.Col" data-columns-small="6"
+			data-columns-medium="6" data-columns-large="6">
+
+			<div data-sap-ui-type="ui5strap.Row">
+				<div data-sap-ui-type="ui5strap.Col" data-columns-small="6"
+					data-columns-medium="3" data-columns-large="3">
+
+					<div class="filter_button" data-sap-ui-type="ui5strap.Button"
+						data-text="{i18n&gt;PAGE3_LIST_OFFICE}" data-tap="find">
+						<div data-sap-ui-type="ui5strap.Icon" data-icon="filter"></div>
+					</div>
+
+				</div>
+				<div data-sap-ui-type="ui5strap.Col" data-columns-small="6"
+					data-columns-medium="3" data-columns-large="3">
+
+					<div class="filter_button" data-sap-ui-type="ui5strap.Button"
+						data-text="{i18n&gt;PAGE3_LIST_OOFFICE}" data-tap="find">
+						<div data-sap-ui-type="ui5strap.Icon" data-icon="filter"></div>
+					</div>
+
+				</div>
+				<div data-sap-ui-type="ui5strap.Col" data-columns-small="6"
+					data-columns-medium="3" data-columns-large="3">
+
+					<div class="filter_button" data-sap-ui-type="ui5strap.Button"
+						data-text="{i18n&gt;PAGE3_LIST_CROOM}" data-tap="find">
+						<div data-sap-ui-type="ui5strap.Icon" data-icon="filter"></div>
+					</div>
+
+				</div>
+				<div data-sap-ui-type="ui5strap.Col" data-columns-small="6"
+					data-columns-medium="3" data-columns-large="3">
+
+					<div class="filter_button" data-sap-ui-type="ui5strap.Button"
+						data-text="{i18n&gt;PAGE3_CAPACITY}" data-tap="find">
+						<div data-sap-ui-type="ui5strap.Icon" data-icon="filter"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div data-sap-ui-aggregation="body">
-<!-- test -->
-		<div class="search" data-sap-ui-type="ui5strap.Container"
-			data-type="Fluid">
-			<div class="searchform" data-sap-ui-type="ui5strap.Row">
+		<!-- 
+				<div data-sap-ui-type="ui5strap.Bar" >
+			<div data-sap-ui-aggregation="left">
+			<div data-sap-ui-type="ui5strap.Row">
 				<div data-sap-ui-type="ui5strap.Col" data-columns-small="2"
-					data-columns-medium="3">
+					data-columns-medium="2">
 
 					<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">
 
 						<div data-sap-ui-type="ui5strap.FormGroup"
 							data-label="{i18n&gt;SEARCH}" data-label-small="2"
-							data-label-medium="4">
-							<div data-sap-ui-type="ui5strap.Col" data-columns-small="3"
-								data-columns-medium="4">
+							data-label-medium="6">
+							<div data-sap-ui-type="ui5strap.Col" data-columns-small="2"
+								data-columns-medium="6">
 
-								<div data-sap-ui-type="ui5strap.ButtonDropdown"
-									data-text="{i18n&gt;PAGE3_LIST_CROOM}"> 
-									<div data-sap-ui-type="ui5strap.ListDropdownMenu"
-										data-selection-mode="SingleMaster"
-										data-update-master-text="true">
-										<div data-sap-ui-type="ui5strap.ListLinkItem"
-											data-text="{i18n&gt;PAGE3_LIST_CROOM}"></div>
-										<div data-sap-ui-type="ui5strap.ListLinkItem"
-											data-text="{i18n&gt;PAGE3_LIST_OOFFICE}"></div>
-										<div data-sap-ui-type="ui5strap.ListLinkItem"
-											data-text="{i18n&gt;PAGE3_LIST_OFFICE}"></div>
-										<div data-sap-ui-type="ui5strap.ListLinkItem"
-											data-text="{i18n&gt;PAGE3_LIST_LOFT}"></div>
+								<div data-sap-ui-type="ui5strap.SelectBox" data-size="Small" data-text="{i18n&gt;PAGE3_LIST_CROOM}"> 
+									<div data-sap-ui-type="ui5strap.Item" data-value="{i18n&gt;PAGE3_LIST_OFFICE}" data-text="{i18n&gt;PAGE3_LIST_OFFICE}"></div>
+									<div data-sap-ui-type="ui5strap.Item" data-value="{i18n&gt;PAGE3_LIST_CROOM}" data-text="{i18n&gt;PAGE3_LIST_CROOM}"></div>
+									<div data-sap-ui-type="ui5strap.Item" data-value="{i18n&gt;PAGE3_LIST_OOFFICE}" data-text="{i18n&gt;PAGE3_LIST_OOFFICE}"></div>
+										<div data-sap-ui-type="ui5strap.Item" data-value="{i18n&gt;PAGE3_LIST_LOFT}" data-text="{i18n&gt;PAGE3_LIST_LOFT}"></div>
+
 									</div>
 								</div>
 							</div>
@@ -47,7 +90,7 @@
 
 
 					</div>
-				</div>
+		
 				<div data-sap-ui-type="ui5strap.Col" data-columns-small="2"
 					data-columns-medium="2">
 					<div data-sap-ui-type="ui5strap.Form" data-type="Horizontal">
@@ -99,105 +142,116 @@
 
 			</div>
 		</div>
-		<!-- Container Form -->
-		<div data-sap-ui-type="ui5strap.ScrollContainer" data-vertical="true">
-			<div data-sap-ui-type="ui5strap.Container" data-type="FluidInset">
-				<div data-sap-ui-type="ui5strap.Row">
+		</div> -->
+	 	<div data-sap-ui-type="ui5strap.ScrollContainer" data-visible="true" data-vertical="true" data-horizontal="true">
+			<div data-sap-ui-type="ui5strap.Row">
+				<!-- 1. Spalte -->
+				<div  data-sap-ui-type="ui5strap.Col"
+					data-columns-small="12" data-columns-medium="6"
+					data-columns-large="6">
 
-					<!-- 2. Spalte -->
-					<div data-sap-ui-type="ui5strap.Col" data-columns-small="4"
-						data-columns-medium="6" data-columns-large="8">
-						<div data-sap-ui-type="ui5strap.Container" data-type="FluidInset"
-							data-content="{meetdesk&gt;/appdata/spacedata}">
-										
-							<div class="block" data-sap-ui-type="ui5strap.Button"
-								data-type="Block" data-tap="getprop">
-								-->
-								<div data-sap-ui-type="ui5strap.Row">
+					<div class="map" data-sap-ui-type="openui5.googlemaps.Map"  data-zoom="12" data-height="600px"
+						data-lat="{ path : 'meetdesk&gt;/appdata/city_lat' }"
+						data-lng="{ path : 'meetdesk&gt;/appdata/city_lng' }"
+						data-markers="{meetdesk&gt;/appdata/spacedata}">
 
-									<!-- Image -->
-									<div data-sap-ui-type="ui5strap.Col" data-columns-medium="6"
-										data-columns-large="6">
+						<div  data-sap-ui-type="openui5.googlemaps.Marker"
+							data-lat="{meetdesk&gt;lat}" data-lng="{meetdesk&gt;lng}"
+							data-info="{meetdesk&gt;name}" data-click="marker_clicked" data-icon="./apps/app/img/logo10.png"></div>
 
-										<div class="img1" class="img_1" data-sap-ui-type="ui5strap.Image"
-											data-src="{ path : 'meetdesk>img'}" data-alt="Image"></div>
 
-										<div class="price" data-sap-ui-type="ui5strap.Container"
-											data-type="FluidInset">
-								
-											<div data-sap-ui-type="ui5strap.Row">
-
-												<div data-sap-ui-type="ui5strap.Col" data-columns-medium="6"
-													data-columns-large="6">
-														<div class="img_text" data-sap-ui-type="ui5strap.Heading" data-level="2"
-															data-text="Tag"></div>
-													<div class="img_text" data-sap-ui-type="ui5strap.Heading" data-level="2"
-														data-text="{path : 'meetdesk>day', formatter : '.myFormatterFunction'}"></div>
-												</div>
-												<div data-sap-ui-type="ui5strap.Col" data-columns-medium="6"
-													data-columns-large="6">
-													<div class="img_text" data-sap-ui-type="ui5strap.Heading" data-level="2"
-															data-text="Stunde"></div>
-													<div class="img_text" data-sap-ui-type="ui5strap.Heading" data-level="2"
-													
-														data-text="{  path : 'meetdesk>hour', formatter : '.myFormatterFunction' }"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- Room Description -->
-									<div data-sap-ui-type="ui5strap.Col" data-columns-medium="6"
-										data-columns-large="6">
-										<div data-sap-ui-type="ui5strap.Container">
-
-											<div data-sap-ui-type="ui5strap.Heading" data-level="3"
-												data-text="{meetdesk&gt;name}"></div>
-
-											<div data-sap-ui-type="ui5strap.Paragraph"
-												data-text="{meetdesk&gt;description}"
-												data-trailing-space="true"></div>
-											<div data-sap-ui-type="ui5strap.Paragraph"
-												data-text="{i18n&gt;PAGE3_CAPACITY}"
-												data-trailing-space="true">
-											<div class="capacity"  data-sap-ui-type="ui5strap.Label" data-severity="None"
-												data-text="{meetdesk&gt;capacity}"></div>
-												</div>
-											<div data-sap-ui-type="ui5strap.Link" data-href="#"
-												data-text="{meetdesk&gt;orgname}"
-												data-trailing-space="true"></div>
-										  <div data-sap-ui-type="ui5strap.Paragraph"
-												data-text="{meetdesk&gt;orgdescription}"
-												data-trailing-space="true"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
 					</div>
 
-					<!-- 1. Spalte -->
-					<div class="map" data-sap-ui-type="ui5strap.Col"
-						data-columns-small="4" data-columns-medium="6"
-						data-columns-large="4">
+				</div>
 
-						<div data-sap-ui-type="openui5.googlemaps.Map" data-width="500px"
-							data-height="800px" data-zoom="12"
-							data-lat="{ path : 'meetdesk&gt;/appdata/city_lat' }"
-							data-lng="{ path : 'meetdesk&gt;/appdata/city_lng' }"
-							data-markers="{meetdesk&gt;/appdata/spacedata}">
+				<!-- Container Form -->
+				<div data-sap-ui-type="ui5strap.Col" data-columns-small="12"
+					data-columns-medium="6" data-columns-large="6">
 
-							<div data-sap-ui-type="openui5.googlemaps.Marker"
-								data-lat="{meetdesk&gt;lat}" data-lng="{meetdesk&gt;lng}"
-								data-info="{meetdesk&gt;name}"></div>
+		
 
+							<div  data-sap-ui-type="ui5strap.Row">
 
+								<!-- 2. Spalte -->
+							 	<div data-sap-ui-type="ui5strap.Col" data-columns-small="12"
+									data-columns-medium="12" data-columns-large="12"> 
+												<div data-sap-ui-type="ui5strap.ScrollContainer"
+						data-vertical="false" data-horizontal="false" data-content="{meetdesk&gt;/appdata/spacedata}" >
+								
+										<div class="block" data-sap-ui-type="ui5strap.Button"
+											data-type="Block" data-tap="getprop">
+											-->
+											<div data-sap-ui-type="ui5strap.Row">
+
+												<!-- Image -->
+												<div data-sap-ui-type="ui5strap.Col" data-columns-small="12" data-columns-medium="6"
+													data-columns-large="6">
+
+													<div class="img1" class="img_1"
+														data-sap-ui-type="ui5strap.Image"
+														data-src="{ path : 'meetdesk&gt;img'}" data-alt="Image"></div>
+
+													<div class="price" data-sap-ui-type="ui5strap.Container"
+														data-type="FluidInset">
+
+														<div data-sap-ui-type="ui5strap.Row">
+
+															<div data-sap-ui-type="ui5strap.Col" data-columns-small="6"
+																data-columns-medium="6" data-columns-large="6">
+																<div class="img_text"
+																	data-sap-ui-type="ui5strap.Heading" data-level="2"
+																	data-text="{i18n&gt;DAY}"></div>
+																<div class="img_text"
+																	data-sap-ui-type="ui5strap.Heading" data-level="2"
+																	data-text="{path : 'meetdesk&gt;day', formatter : '.myFormatterFunction'}"></div>
+															</div>
+															<div data-sap-ui-type="ui5strap.Col"
+																data-columns-medium="6" data-columns-large="6" data-columns-small="6">
+																<div class="img_text"
+																	data-sap-ui-type="ui5strap.Heading" data-level="2"
+																	data-text="{i18n&gt;HOUR}"></div>
+																<div class="img_text"
+																	data-sap-ui-type="ui5strap.Heading" data-level="2"
+																	data-text="{  path : 'meetdesk&gt;hour', formatter : '.myFormatterFunction' }"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Room Description -->
+												<div data-sap-ui-type="ui5strap.Col" data-columns-small="12" data-columns-medium="6"
+													data-columns-large="6">
+													<div data-sap-ui-type="ui5strap.Container">
+
+														<div data-sap-ui-type="ui5strap.Heading" data-level="3"
+															data-text="{meetdesk&gt;name}"></div>
+
+														<div data-sap-ui-type="ui5strap.Paragraph"
+															data-text="{meetdesk&gt;description}"
+															data-trailing-space="true"></div>
+														<div data-sap-ui-type="ui5strap.Paragraph"
+															data-text="{i18n&gt;PAGE3_CAPACITY}"
+															data-trailing-space="true">
+															<div class="capacity" data-sap-ui-type="ui5strap.Label"
+																data-severity="None" data-text="{meetdesk&gt;capacity}"></div>
+														</div>
+														<div data-sap-ui-type="ui5strap.Link" data-href="#"
+															data-text="{meetdesk&gt;orgname}"
+															data-trailing-space="true"></div>
+														<div data-sap-ui-type="ui5strap.Paragraph"
+															data-text="{meetdesk&gt;orgdescription}"
+															data-trailing-space="true"></div>
+													</div>
+												</div>
+											</div>
+						
+					
+						
+</div>
+						 </div>
 						</div>
-
 					</div>
 				</div>
 			</div>
-			<!--  	</div> -->
 		</div>
 	</div>
 </div>

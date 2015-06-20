@@ -177,7 +177,11 @@ onExit: function(oEvent){
 	//	return text.toUpperCase();
 	},
 	
-	
+	marker_clicked : function(oEvent){	
+		var srcButton = oEvent.getSource();
+		
+
+	},
 handleChange : function(oEvent){
 			var oDP = oEvent.oSource;
 			var oInput = sap.ui.getCore().byId("I2");

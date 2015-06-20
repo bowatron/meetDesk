@@ -252,7 +252,7 @@ height: 100%;
 .img1{
 	
 width: 500px;
-
+margin-bottom: -95px;
 }
 
 .img_2{
@@ -274,8 +274,7 @@ border-style: none;
 }
 
 .map{
-margin-top: -20px;
-	margin-left: -20px;
+
 
    } 
 
@@ -288,8 +287,8 @@ margin-top: -20px;
   } 
 
 .block{
-	margin-top: -20px;
-	margin-left: -20px;
+	
+
 	background-color: #f8f8f8;
     border-style: none;    
 }
@@ -303,8 +302,8 @@ margin-top: -20px;
 .price { 
   background-color: #01abb5;
 opacity: 0.5;
-   margin-top: -100px;
- 
+ /*  margin-top: -100px;
+ */
 }
 
 .capacity { 
@@ -312,7 +311,10 @@ margin-right: 3px;
 color: black;
 }
 
+.filter_button{ 
+width: 100%;
 
+}
   
 .img_text { 
    color: white;
